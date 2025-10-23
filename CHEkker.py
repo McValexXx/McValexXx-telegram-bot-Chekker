@@ -206,7 +206,7 @@ async def reset_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # ===== MAIN =====
 def main():
-    TOKEN = "7612353428:AAHbrnGbxk6v_83FHMqTfkGztEwE2QrM2Jc"
+    TOKEN = os.getenv("BOT_TOKEN")
 
     app = ApplicationBuilder().token(TOKEN).build()
 
